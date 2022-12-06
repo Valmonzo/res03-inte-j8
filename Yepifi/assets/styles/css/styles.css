@@ -65,6 +65,12 @@ table {
     justify-content: center;
     align-items: center;
   }
+  #home main > #left {
+    text-align: center;
+  }
+  #home main > #right > article {
+    justify-self: center;
+  }
 }
 @media (min-width: 768px) {
   #home main {
@@ -112,7 +118,6 @@ table {
   font-weight: bold;
   justify-self: center;
   align-self: center;
-  text-align: left;
   width: 100%;
 }
 #home main #left h3 {
@@ -187,12 +192,27 @@ table {
   max-height: 2rem;
 }
 
+@media (max-width: 767px) {
+  #pricing > header {
+    visibility: hidden;
+  }
+  #pricing #basic {
+    margin-bottom: 5vh;
+  }
+}
+@media (max-width: 767px) and (min-width: 768px) {
+  #formule {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 #pricing {
   font-size: 16px;
   font-family: "JetBrains Mono", monospace;
-  background: linear-gradient(180deg, #272640, #43006b, #7400b8, #6930c3, #5e60ce, #5390d9);
+  background: linear-gradient(180deg, #272640, #43006b, #7400b8, #6930c3, #5e60ce, #5390d9), no-repeat;
   color: white;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 3.15rem;
 }
 #pricing > header {
   display: grid;
@@ -225,8 +245,6 @@ table {
   padding: 1vh 0vw 6vh 0vw;
 }
 #pricing main #formule {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   width: 65vw;
   align-self: center;
   justify-self: center;
