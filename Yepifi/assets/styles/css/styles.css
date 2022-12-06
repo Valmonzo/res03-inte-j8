@@ -192,20 +192,6 @@ table {
   max-height: 2rem;
 }
 
-@media (max-width: 767px) {
-  #pricing > header {
-    visibility: hidden;
-  }
-  #pricing #basic {
-    margin-bottom: 5vh;
-  }
-}
-@media (max-width: 767px) and (min-width: 768px) {
-  #formule {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 #pricing {
   font-size: 16px;
   font-family: "JetBrains Mono", monospace;
@@ -213,6 +199,20 @@ table {
   color: white;
   height: 100%;
   padding-bottom: 3.15rem;
+}
+@media (max-width: 767.98px) {
+  #pricing > header {
+    visibility: hidden;
+  }
+  #pricing #basic {
+    margin-bottom: 5vh;
+  }
+}
+@media (min-width: 768px) {
+  #pricing #formule {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 #pricing > header {
   display: grid;
