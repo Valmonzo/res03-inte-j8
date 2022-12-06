@@ -1,0 +1,138 @@
+
+ #pricing  {
+      font-size: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      background: $gradient-bottom;
+      color: white;
+      height:100vh;
+
+      & > header {
+          display:grid;
+          height:10vh;
+          border-bottom:1px solid white;
+          h1 {
+              display:none;
+          }
+          nav {
+              align-self:center;
+              justify-self:center;
+
+              ul {
+                  li {
+                      display:inline-block;
+                      font-size:0.8em;
+                      margin: 0vh 5vw;
+                      font-weight:bold;
+                  }
+              }
+          }
+
+      }
+
+      main {
+          display:grid;
+          grid-template-rows: .3fr 1fr;
+          padding-top:5vh;
+
+            h2 {
+                font-size:2.3em;
+                align-self:center;
+                justify-self:center;
+                font-weight:700;
+                padding: 1vh 0vw 6vh 0vw;
+            }
+
+            #formule {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width:65vw;
+                align-self:center;
+                justify-self:center;
+
+                & > article:not(:nth-of-type(2)) {
+                    margin-top:6vh;
+
+                }
+
+                & > article {
+                    background-color:white;
+                    display:flex;
+                    flex-direction:column;
+
+                    & > header {
+                        height:6vh;
+                        display:grid;
+                        background-color:#56CFE0;
+
+                        & > h3 {
+                            align-self:center;
+                            justify-self:center;
+                            font-weight:500;
+                            text-transform:uppercase;
+                        }
+                    }
+
+                    &:not(:nth-of-type(2)) > header{
+                        background-color:#5E60CE;
+                    }
+
+
+                    & > .border {
+                        height:100%;
+                        border-left: 0.6px solid #56CFE0;
+                        border-right: 0.6px solid #56CFE0;
+                        display:flex;
+                        flex-direction:column;
+                        justify-content:space-between;
+
+                    }
+
+                    & > .border-2 {
+                        height:100%;
+                        display:flex;
+                        flex-direction:column;
+                        justify-content:space-between;
+
+                    }
+
+
+                    & > section > section {
+                        color:black;
+                        font-size:0.8em;
+                        height:80%;
+
+
+                        & > ul {
+                            padding-left:.7vw;
+
+                            & > li {
+                                padding:1vh 0vw 4vh 0vw;
+                            }
+                        }
+                    }
+
+                    & > section  > footer {
+                        color:#5E60CE;
+                        font-size:0.9em;
+                        text-align:center;
+                        font-weight:bold;
+                        padding:1vh 0 1vh 0;
+                        border-bottom: 0.6px solid #56CFE0;
+
+                        & > p {
+                            justify-self:center;
+                            align-self:end;
+                        }
+                    }
+
+                    &:nth-of-type(2)> section > footer {
+                        & > p {
+                            justify-self:center;
+                            align-self:end;
+                            color:#56CFE0;
+                        }
+                    }
+                }
+            }
+      }
+  }

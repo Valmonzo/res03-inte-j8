@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (max-width: 767px) {
+  #home > header {
+    visibility: hidden;
+  }
+  #home > header > nav {
+    display: none;
+  }
+  #home main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  #home main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#home {
+  font-size: 16px;
+  font-family: "JetBrains Mono", monospace;
+  background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+  color: white;
+}
+#home > header {
+  display: grid;
+  height: 10vh;
+  border-bottom: 1px solid white;
+}
+#home > header h1 {
+  display: none;
+}
+#home > header nav {
+  align-self: center;
+  justify-self: center;
+}
+#home > header nav ul li {
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0vh 5vw;
+  font-weight: bold;
+}
+#home main {
+  height: 90vh;
+}
+#home main #left {
+  width: 50%;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+}
+#home main #left h2 {
+  font-size: 2.6em;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-self: center;
+  align-self: center;
+  text-align: left;
+  width: 100%;
+}
+#home main #left h3 {
+  font-size: 1.6em;
+  font-weight: bold;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+#home main #right {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+#home main #right > article {
+  background-color: rgba(0, 0, 0, 0.3);
+  align-self: center;
+  margin-left: 3vw;
+  width: 50%;
+  padding: 1vh 2vw;
+  border-radius: 8px;
+}
+#home main #right > article > header > * {
+  line-height: 6vh;
+}
+#home main #right > article > header {
+  border-bottom: 1px solid #56CFE0;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+}
+#home main #right > article > header h4 {
+  color: #7500B8;
+  font-size: 1.2em;
+  grid-column: 1/2;
+}
+#home main #right > article > header h5 {
+  color: #56CFE0;
+  font-size: 1.4em;
+  grid-column: 1/2;
+}
+#home main #right > article > header > img {
+  max-height: 4rem;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+#home main #right > article #list {
+  padding: 2vh 0.6vw;
+}
+#home main #right > article #list > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1vh 0vw;
+}
+#home main #right > article #list > ul > li:not(:first-of-type) > img {
+  max-height: 2rem;
+  padding-right: 1vw;
+}
+#home main #right > article #list > ul > li:not(:first-of-type) {
+  color: #91A5D6;
+}
+#home main #right > article #list > ul > li:not(:last-of-type) {
+  border-bottom: 1px solid #006366;
+}
+#home main #right > article #list > ul > li:first-of-type {
+  font-size: 1.2em;
+  padding: 0vh 0vw 1vh 0vw;
+}
+#home main #right > article #list > ul > li:first-of-type > img {
+  max-height: 2rem;
+}
+
+#pricing {
+  font-size: 16px;
+  font-family: "JetBrains Mono", monospace;
+  background: linear-gradient(180deg, #272640, #43006b, #7400b8, #6930c3, #5e60ce, #5390d9);
+  color: white;
+  height: 100vh;
+}
+#pricing > header {
+  display: grid;
+  height: 10vh;
+  border-bottom: 1px solid white;
+}
+#pricing > header h1 {
+  display: none;
+}
+#pricing > header nav {
+  align-self: center;
+  justify-self: center;
+}
+#pricing > header nav ul li {
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0vh 5vw;
+  font-weight: bold;
+}
+#pricing main {
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  padding-top: 5vh;
+}
+#pricing main h2 {
+  font-size: 2.3em;
+  align-self: center;
+  justify-self: center;
+  font-weight: 700;
+  padding: 1vh 0vw 6vh 0vw;
+}
+#pricing main #formule {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 65vw;
+  align-self: center;
+  justify-self: center;
+}
+#pricing main #formule > article:not(:nth-of-type(2)) {
+  margin-top: 6vh;
+}
+#pricing main #formule > article {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+#pricing main #formule > article > header {
+  height: 6vh;
+  display: grid;
+  background-color: #56CFE0;
+}
+#pricing main #formule > article > header > h3 {
+  align-self: center;
+  justify-self: center;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#pricing main #formule > article:not(:nth-of-type(2)) > header {
+  background-color: #5E60CE;
+}
+#pricing main #formule > article > .border {
+  height: 100%;
+  border-left: 0.6px solid #56CFE0;
+  border-right: 0.6px solid #56CFE0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#pricing main #formule > article > .border-2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#pricing main #formule > article > section > section {
+  color: black;
+  font-size: 0.8em;
+  height: 80%;
+}
+#pricing main #formule > article > section > section > ul {
+  padding-left: 0.7vw;
+}
+#pricing main #formule > article > section > section > ul > li {
+  padding: 1vh 0vw 4vh 0vw;
+}
+#pricing main #formule > article > section > footer {
+  color: #5E60CE;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: bold;
+  padding: 1vh 0 1vh 0;
+  border-bottom: 0.6px solid #56CFE0;
+}
+#pricing main #formule > article > section > footer > p {
+  justify-self: center;
+  align-self: end;
+}
+#pricing main #formule > article:nth-of-type(2) > section > footer > p {
+  justify-self: center;
+  align-self: end;
+  color: #56CFE0;
+}
+
+/*# sourceMappingURL=styles.css.map */
