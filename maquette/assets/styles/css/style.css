@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Crimson", sans-serif;
+}
+body > header {
+  height: 100Vh;
+}
+body > header > nav {
+  padding: 3vh 0;
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+}
+body > header > nav > ul {
+  list-style-type: none;
+  padding: 2vh 5vw 1vh 5vw;
+}
+body > header > nav > ul > li {
+  display: inline-block;
+}
+body > header > nav > ul:first-of-type {
+  grid-column: 1/2;
+  text-align: center;
+  color: #808080;
+}
+body > header > nav > ul:first-of-type > li {
+  padding: 0 1vw 0 1vw;
+}
+body > header > nav > ul:last-of-type {
+  grid-column: 2/3;
+  justify-self: center;
+  padding: 2vh 2vw;
+}
+body > header > nav > ul:last-of-type > li {
+  padding: 0 1vw;
+}
+body > header > section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #D2D2D2;
+  padding: 8vh 4vw;
+}
+body > header > section > #left-header {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 0 3.5vw;
+}
+body > header > section > #left-header > h1 {
+  font-weight: 600;
+  font-size: 3.4em;
+  line-height: 8vh;
+}
+body > header > section > #left-header > h1 > strong {
+  color: #5E60CE;
+}
+body > header > section > #left-header > h1 > span {
+  font-size: 0.8em;
+}
+body > header > section > #left-header > p {
+  font-size: 1.3em;
+  color: #808080;
+}
+body > header > section > #left-header > form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body > header > section > #left-header > form > input {
+  border: none;
+  padding: 2vh 2vw;
+}
+body > header > section > #left-header > form > input:first-of-type {
+  border-radius: 15px 0 0 15px;
+  border: none;
+  width: 15vw;
+}
+body > header > section > #left-header > form > input:last-of-type {
+  border-radius: 0 15px 15px 0;
+  width: 10vw;
+  background-color: #5390D8;
+  color: white;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

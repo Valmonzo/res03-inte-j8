@@ -1,0 +1,105 @@
+@import 'reset';
+
+body {
+    font-family: 'Crimson', sans-serif;
+    & > header {
+        height:100Vh;
+
+        & > nav {
+            padding:3vh 0;
+            display:grid;
+            grid-template-columns: 1fr 0.2fr;
+
+            & > ul {
+                list-style-type:none;
+                padding:2vh 5vw 1vh 5vw;
+
+                & > li {
+                    display:inline-block;
+                }
+
+            }
+
+            & > ul:first-of-type {
+                grid-column:1/2;
+                text-align:center;
+                color:#808080;
+
+                & > li {
+                    padding:0 1vw 0 1vw;
+                }
+            }
+
+            & > ul:last-of-type {
+                grid-column:2/3;
+                justify-self:center;
+                padding: 2vh 2vw;
+
+                & > li {
+                    padding:0 1vw;
+                }
+            }
+
+        }
+
+        & > section {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            background-color:#D2D2D2;
+            padding:8vh 4vw;
+
+            & > #left-header {
+                grid-column:1/2;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: start;
+                padding: 0 3.5vw;
+
+                & > h1 {
+                    font-weight:600;
+                    font-size:3.4em;
+                    line-height:8vh;
+
+                    & > strong {
+                        color:#5E60CE;
+                    }
+
+                    & > span {
+                        font-size: .8em;
+                    }
+                }
+
+                & > p {
+                    font-size:1.3em;
+                    color:#808080;
+                }
+
+                & > form {
+                    display:flex;
+                    flex-direction:row;
+                    justify-content:center;
+
+                    & > input {
+                        border:none;
+                        padding:2vh 2vw;
+                    }
+
+                    & > input:first-of-type {
+                        border-radius: 15px 0 0 15px;
+                        border:none;
+                        width:15vw;
+                    }
+
+                    & > input:last-of-type {
+                        border-radius: 0 15px 15px 0;
+                        width:10vw;
+                        background-color:#5390D8;
+                        color:white;
+                        font-weight:bold;
+                    }
+                }
+            }
+        }
+    }
+}
